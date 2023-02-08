@@ -57,7 +57,7 @@ sleep 60
 
 echo "untaint controlplane node"
 # kubectl taint node $(kubectl get nodes -o=jsonpath='{.items[].metadata.name}')  node-role.kubernetes.io/master-
-kubectl taint node $(kubectl get nodes -o=jsonpath='{.items[].metadata.name}')  node-role.kubernetes.io/control-plane-
+# kubectl taint node $(kubectl get nodes -o=jsonpath='{.items[].metadata.name}')  node-role.kubernetes.io/control-plane-
 kubectl get node -o wide
 
 
